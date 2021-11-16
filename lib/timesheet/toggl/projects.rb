@@ -1,7 +1,7 @@
 module Timesheet
   # Module for projects creating/reading from toggl via api.
   module Projects
-    PROJECTS_URI = 'https://www.toggl.com/api/v8/projects'
+    PROJECTS_URI = 'https://api.track.toggl.com/api/v8/projects'
 
     def create_project(name, workspace_id, client_id)
       params = {
@@ -59,11 +59,11 @@ module Timesheet
     end
 
     def workspace_projects_url(workspace_id)
-      "https://www.toggl.com/api/v8/workspaces/#{workspace_id}/projects"
+      "https://api.track.toggl.com/api/v8/workspaces/#{workspace_id}/projects"
     end
 
     def workspace_clients_url(workspace_id)
-      "https://www.toggl.com/api/v8/workspaces/#{workspace_id}/clients"
+      "https://api.track.toggl.com/api/v8/workspaces/#{workspace_id}/clients"
     end
 
     def parse_body(body)

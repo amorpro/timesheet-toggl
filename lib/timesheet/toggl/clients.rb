@@ -1,6 +1,6 @@
 module Timesheet
   module Clients
-    CLIENTS_URI = 'https://www.toggl.com/api/v8/clients'
+    CLIENTS_URI = 'https://api.track.toggl.com/api/v8/clients'
 
     def create_client(name, workspace_id)
       params = {
