@@ -21,7 +21,7 @@ module Timesheet
 
     attr_accessor :config
 
-    BASE_URI = 'https://toggl.com/reports/api/v2/details'
+    BASE_URI = 'https://api.track.toggl.com/reports/api/v2/details'
 
     # Example of config:
     #   api_token: 1971800d4d82861d8f2c1651fea4d212
